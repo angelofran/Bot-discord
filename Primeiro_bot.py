@@ -216,7 +216,7 @@ async def current_time():
     now = datetime.datetime.now()
     now = now.strftime("%d/%m/%Y às %H:%M")
     channel = bot.get_channel(964546214102204518)
-    await channel.send("Data actual: " + now)
+    await channel.send(f"Data actual: {now}")
 
 TOKEN = config("TOKEN")
 bot.run(TOKEN)
